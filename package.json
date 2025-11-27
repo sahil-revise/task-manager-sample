@@ -1,0 +1,13 @@
+{
+  "name": "task-manager-sample",
+  "version": "1.0.0",
+  "description": "A simple task manager demonstrating modular JavaScript",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": ["task", "manager", "sample", "demo"],
+  "author": "",
+  "license": "MIT"
+}
