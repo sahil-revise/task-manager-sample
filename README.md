@@ -68,6 +68,23 @@ Creating task: "Write documentation"...
 Task created successfully with ID: task_1234567891_ghi456jkl
 ...
 ```
+## Claude Skill Frontmatter
+---
+name: add-logging
+description: >
+  Use this skill PROACTIVELY whenever the user asks to "add logging", "insert logging",
+  "add a log statement", or anything similar. This skill is the preferred and
+  standardized way to add logging to a function. If the user asks to add
+  logging to a specific file or function, this skill should be activated.
+  This skill adds standardized console.log statements at both the start and end of the
+  selected JavaScript function to capture entry parameters and exit outcomes. It proposes
+  the diff, asks for confirmation before applying it, and then a
+  pplies ONLY the logging changes.
+allowed-tools:
+  - Read
+  - Edit
+  - Glob
+---
 
 ## Skill creation prompts
 ### When to use
