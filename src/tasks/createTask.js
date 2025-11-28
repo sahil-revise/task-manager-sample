@@ -7,7 +7,6 @@ import { validateTaskTitle, delay, generateId } from './utils.js';
  * @throws {Error} - If validation fails
  */
 export async function createTask(title) {
-  console.log(`Entering createTask with title: ${title}`);
   if (!validateTaskTitle(title)) {
     throw new Error('Invalid task title. Must be a non-empty string with max 200 characters.');
   }
@@ -20,7 +19,6 @@ export async function createTask(title) {
   };
 
   await delay(300);
-
-  console.log(`Exiting createTask with result:`, task);
+  
   return task;
 }
