@@ -69,6 +69,36 @@ Task created successfully with ID: task_1234567891_ghi456jkl
 ...
 ```
 
+## Skill creation prompts
+### When to use
+Help me fill in the "When to Use" section for this add-logging skill.
+It should activate when the user asks to add or insert logging in
+a JavaScript function. Write 3–6 bullet points.
+
+### What this skill does
+Fill in the "What This Skill Does" section.
+Describe that it:
+- reads the JS file
+- identifies the relevant function
+- prepares a console.log diff
+- asks for confirmation
+- applies the diff if approved
+- shows the updated code
+
+### Workflow
+Under the "Workflow" heading, write a 3-phase workflow:
+- Phase 1: identify function and prepare diff
+- Phase 2: show diff and request confirmation
+- Phase 3: apply diff and show updated code
+Use numbered steps.
+
+### Boundaries
+Fill in the "Boundaries" section with bullets that say:
+- don't rewrite entire files
+- only add one logging statement
+- ask user if function cannot be found
+- don't modify non-JS files
+
 ## License
 
 MIT
